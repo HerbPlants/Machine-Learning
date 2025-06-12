@@ -147,9 +147,9 @@ Setelah proses pelatihan selesai, model diekspor dan dikonversi untuk memungkink
 
 * **File Model**:
 
-  * **[model.h5]**: Model terlatih dalam format Keras `.h5`.
+  * **model.h5**: Model terlatih dalam format Keras `.h5`.
 
-  * **[Model TensorFlow.js]**: Model yang telah dikonversi untuk digunakan dalam lingkungan TensorFlow\.js.
+  * **Model TensorFlow.js**: Model yang telah dikonversi untuk digunakan dalam lingkungan TensorFlow\.js.
 
 Proses ekspor dan konversi ini memastikan bahwa model klasifikasi tanaman obat dapat diakses secara lintas platform dengan performa optimal dan kemudahan penggunaan, khususnya bagi pengguna yang mengakses melalui browser atau aplikasi web mobile.
 
