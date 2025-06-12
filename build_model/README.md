@@ -1,4 +1,4 @@
-# HerbPlants Machine Learning Repository
+# HerbPlants Machine Learning Repository - Build Model
 
 Repositori ini berisi dataset, skrip, dan model deep learning yang dikembangkan untuk proyek **HerbPlants**, yaitu sistem klasifikasi tanaman herbal. Proyek ini menerapkan teknik computer vision dan deep learning untuk mengklasifikasikan berbagai tanaman herbal Indonesia menggunakan data citra.
 
@@ -160,7 +160,8 @@ build_model/
 ├── indexplant/
 │   └── class_indices.json     # Pemetaan indeks ke nama kelas
 ├── models/
-│   └── sv                     # Folder model hasil pelatihan
+│   ├── h5_model                    # Folder model hasil pelatihan
+│   └── tfjs_model
 ├── notebook/
 │   ├── HerbPlants_CC25_CF155.ipynb  # Notebook Jupyter utama
 │   └── herbplants_cc25_cf155.py     # Versi script Python dari notebook
