@@ -32,19 +32,7 @@ Setiap profil tanaman di dalam situs tersebut terdiri dari beberapa bagian stand
 - **Agroekologi** (Kondisi ekologis dan lingkungan tumbuh)
 - **Khasiat** (Manfaat dalam pengobatan tradisional)
 
-Bagian-bagian ini secara khusus menjadi target dalam proses *web scraping* yang dilakukan pada tahap **Extract** dan **Transform** dalam *ETL pipeline* ini. Struktur halaman yang konsisten dan terstandarisasi memungkinkan ekstraksi data dilakukan secara sistematis. Informasi yang berhasil dikumpulkan kemudian dicocokkan dengan nama tanaman hasil prediksi dari model klasifikasi sehingga sistem dapat menampilkan informasi tanaman herbal secara dinamis kepada pengguna akhir.
-
-## Struktur Direktori
-
-.  
-├── extract.py # Modul untuk ekstraksi data (web scraping)  
-├── transform.py # Modul untuk transformasi dan pembersihan data  
-├── load.py # Modul untuk menyimpan data ke Excel  
-├── main.py # Pipeline utama ETL  
-├── link sisa 5.xlsx # File input berisi link tanaman  
-├── hasil_scraping.xlsx # Output hasil scraping  
-├── requirements.txt # Daftar dependensi Python  
-└── README_ETL.md # Dokumentasi proyek ini  
+Bagian-bagian ini secara khusus menjadi target dalam proses *web scraping* yang dilakukan pada tahap **Extract** dan **Transform** dalam *ETL pipeline* ini. Struktur halaman yang konsisten dan terstandarisasi memungkinkan ekstraksi data dilakukan secara sistematis. Informasi yang berhasil dikumpulkan kemudian dicocokkan dengan nama tanaman hasil prediksi dari model klasifikasi sehingga sistem dapat menampilkan informasi tanaman herbal secara dinamis kepada pengguna akhir.  
 
 ## **Extract: Pengambilan Informasi melalui Web Scraping**
 
@@ -255,6 +243,18 @@ output_file = "hasil_scraping.xlsx"
 load_to_excel(transformed_df, output_file)
 print("Saved to local Excel file:", output_file)
 ```
+
+## **Struktur Direktori**
+
+.  
+├── extract.py # Modul untuk ekstraksi data (web scraping)  
+├── transform.py # Modul untuk transformasi dan pembersihan data  
+├── load.py # Modul untuk menyimpan data ke Excel  
+├── main.py # Pipeline utama ETL  
+├── link sisa 5.xlsx # File input berisi link tanaman  
+├── hasil_scraping.xlsx # Output hasil scraping  
+├── requirements.txt # Daftar dependensi Python  
+└── README_ETL.md # Dokumentasi proyek ini
 
 ### **Catatan Penggunaan**
 
