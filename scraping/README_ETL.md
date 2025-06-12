@@ -34,6 +34,18 @@ Setiap profil tanaman di dalam situs tersebut terdiri dari beberapa bagian stand
 
 Bagian-bagian ini secara khusus menjadi target dalam proses *web scraping* yang dilakukan pada tahap **Extract** dan **Transform** dalam *ETL pipeline* ini. Struktur halaman yang konsisten dan terstandarisasi memungkinkan ekstraksi data dilakukan secara sistematis. Informasi yang berhasil dikumpulkan kemudian dicocokkan dengan nama tanaman hasil prediksi dari model klasifikasi sehingga sistem dapat menampilkan informasi tanaman herbal secara dinamis kepada pengguna akhir.
 
+## Struktur Direktori
+
+.  
+├── extract.py # Modul untuk ekstraksi data (web scraping)  
+├── transform.py # Modul untuk transformasi dan pembersihan data  
+├── load.py # Modul untuk menyimpan data ke Excel  
+├── main.py # Pipeline utama ETL  
+├── link sisa 5.xlsx # File input berisi link tanaman  
+├── hasil_scraping.xlsx # Output hasil scraping  
+├── requirements.txt # Daftar dependensi Python  
+└── README_ETL.md # Dokumentasi proyek ini  
+
 ## **Extract: Pengambilan Informasi melalui Web Scraping**
 
 Tahap ini berfokus pada pengambilan informasi terkait tanaman herbal Indonesia dari sumber daring yang terstruktur. Setelah nama tanaman berhasil diidentifikasi oleh model klasifikasi, proses *extract* ini akan mengambil informasi detail seperti nama lokal, manfaat, distribusi geografis, serta konteks agroekologi dari tanaman tersebut.
@@ -246,15 +258,20 @@ print("Saved to local Excel file:", output_file)
 
 ### **Catatan Penggunaan**
 
-Untuk menjalankan seluruh pipeline, cukup eksekusi skrip ini dari command line atau lingkungan Python Anda:
+Untuk menjalankan seluruh pipeline, cukup eksekusi skrip `main.py` dari command line atau lingkungan Python Anda:
 
 ```bash
 python main.py
 ```
 
-Pastikan bahwa :
+Pastikan bahwa:
 
-- File input (misalnya `link sisa 5.xlsx`) tersedia di direktori kerja.
-- File output tidak sedang terbuka di program lain (seperti Excel) agar tidak terjadi kesalahan penulisan.
+- File input (misalnya `link sisa 5.xlsx`) tersedia di direktori kerja. File ini berisi daftar link halaman tanaman herbal yang akan diproses.
+- File output (misalnya `hasil_scraping.xlsx`) tidak sedang dibuka di program lain (seperti Microsoft Excel) agar tidak terjadi kesalahan saat proses penulisan data.
+- Seluruh dependensi yang dibutuhkan telah diinstal menggunakan perintah berikut:
 
-Skrip ini memastikan bahwa proses ETL berlangsung secara efisien, modular, dan siap diintegrasikan dengan aplikasi atau antarmuka lanjutan.
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+Skrip ini memastikan bahwa proses ETL (Extract – Transform – Load) berjalan secara **modular**, **otomatis**, dan dapat dengan mudah diintegrasikan ke dalam aplikasi atau antarmuka lanjutan lainnya.
