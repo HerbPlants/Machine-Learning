@@ -256,7 +256,7 @@ print("Saved to local Excel file:", output_file)
 ├── requirements.txt # Daftar dependensi Python  
 └── README_ETL.md # Dokumentasi proyek ini
 
-### **Catatan Penggunaan**
+## **Catatan Penggunaan**
 
 Untuk menjalankan seluruh pipeline, cukup eksekusi skrip `main.py` dari command line atau lingkungan Python Anda:
 
