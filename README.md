@@ -70,7 +70,7 @@ Membangun model klasifikasi gambar tanaman herbal berdasarkan dataset internal m
 ## 📦 Dataset
 
 📁 `dataset/`  
-Berisi metadata nama-nama tanaman herbal dan label dasar. Tidak berisi gambar, karena gambar dilatih dari dataset internal & scraping terpisah.
+Berisi dataset yang digunakan untuk melakukan training model.
 
 ---
 
