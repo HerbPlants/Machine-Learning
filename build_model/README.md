@@ -115,7 +115,7 @@ Konfigurasi ini membantu mencegah *overfitting* dan mempercepat proses konvergen
 
 Untuk mengevaluasi perilaku pembelajaran dan performa akhir model, akurasi pelatihan dan validasi dipantau sepanjang setiap *epoch*, diikuti dengan evaluasi pada *test set* terpisah.
 
-![alt text](image-1.png)
+![model evaluation](https://github.com/user-attachments/assets/646214e1-17f7-4001-8c3c-cc58b2dedfd8)
 
 Akurasi pelatihan menunjukkan peningkatan yang stabil dan hampir mencapai 100% pada *epoch* terakhir. Sementara itu, akurasi validasi meningkat signifikan pada tahap awal pelatihan dan secara bertahap stabil di sekitar 87%, yang mengindikasikan proses pembelajaran yang efektif dan generalisasi yang baik. 
 Setelah pelatihan selesai, model dievaluasi menggunakan *test set* yang tidak digunakan selama proses pelatihan maupun validasi. Hasil akhir evaluasi sebagai berikut:
