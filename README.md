@@ -13,7 +13,7 @@ Proyek ini merupakan bagian dari Capstone Project yang terdiri dari dua komponen
 Machine-Learning-main/
 ├── build_model/
 │   ├── indexplant/
-│   │   └── class_indices.json
+│   │   └── class_indices.json 
 │   ├── models/
 │   │   ├── h5_model/ ➝ model.h5
 │   │   └── tfjs_model/ ➝ model.json, group1-shard1of3.bin, ...
@@ -27,7 +27,7 @@ Machine-Learning-main/
 │   ├── extract.py, transform.py, load.py, main.py 
 │   ├── hasil_scraping.xlsx, link sisa 5.xlsx
 │   └── requirements.txt 
-└── README.md  (root level)
+└── README.md  
 ```
 
 ---
