@@ -117,7 +117,7 @@ Untuk mengevaluasi perilaku pembelajaran dan performa akhir model, akurasi pelat
 
 ![alt text](image-1.png)
 
-Akurasi pelatihan menunjukkan peningkatan yang stabil dan hampir mencapai 100% pada *epoch* terakhir. Sementara itu, akurasi validasi meningkat signifikan pada tahap awal pelatihan dan secara bertahap stabil di sekitar 88%, yang mengindikasikan proses pembelajaran yang efektif dan generalisasi yang baik. 
+Akurasi pelatihan menunjukkan peningkatan yang stabil dan hampir mencapai 100% pada *epoch* terakhir. Sementara itu, akurasi validasi meningkat signifikan pada tahap awal pelatihan dan secara bertahap stabil di sekitar 87%, yang mengindikasikan proses pembelajaran yang efektif dan generalisasi yang baik. 
 Setelah pelatihan selesai, model dievaluasi menggunakan *test set* yang tidak digunakan selama proses pelatihan maupun validasi. Hasil akhir evaluasi sebagai berikut:
 
 * **Akurasi Uji (Test Accuracy)** : 87,00%
